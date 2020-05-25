@@ -18,6 +18,8 @@ gem 'bootstrap',  '~>4.3.1'
 gem 'devise-bootstrap-views', '~> 1.0'
 # devise
 gem 'devise'
+# iex finance api
+gem 'iex-ruby-client'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
