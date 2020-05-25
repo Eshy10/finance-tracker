@@ -15,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 # bootstrap
 gem 'bootstrap',  '~>4.3.1'
+# devise
+gem 'devise'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
