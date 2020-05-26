@@ -20,6 +20,8 @@ gem 'devise-bootstrap-views', '~> 1.0'
 gem 'devise'
 # iex finance api
 gem 'iex-ruby-client'
+# font-awesome
+gem 'font_awesome5_rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 

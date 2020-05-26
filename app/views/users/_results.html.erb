@@ -1,0 +1,10 @@
+<div class= "display">
+<%= render 'layouts/messages'%>
+</div>
+<% if @stock.present? %>
+<div class= "card card-header display">
+<strong>Symbol:</strong> <%= @stock.sticker%>
+<strong>Name:</strong> <%= @stock.name%>
+<strong>Price:</strong> <%= @stock.last_price%>
+</div>
+<% end %>
