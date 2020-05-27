@@ -1,0 +1,24 @@
+<div class= "display">
+<%= render 'layouts/messages'%>
+</div>
+<% if @friends.present? %>
+<div class= "card card-header display">
+<table class= 'col-md-12'>
+<tbody>
+<% @friends.each do |friend| %>
+<tr>
+<td><strong>Name:</strong> <%= friend.full_name%></td>
+<td><strong>Email:</strong> <%= friend.email%></td>
+<td><strong>Action:</strong> <%= link_to 'View Profile',user_path(friend), method: :post, class: 'btn btn-xs btn-success'%>
+<% if current_user.not_friends_with?(friend.id) %>
+<%= link_to 'Follow Friend', friendships_path(friend: friend), method: :post, class: 'btn btn-xs btn-success'%>
+<% else %>
+<span class= 'badge badge-secondary'>You are already friends with <%= friend.full_name%></span>
+<% end %>
+</td>
+</tr>
+<% end %>
+</tbody>
+</table>
+</div>
+<% end %>
